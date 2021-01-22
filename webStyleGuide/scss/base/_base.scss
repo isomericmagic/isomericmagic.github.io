@@ -1,0 +1,23 @@
+//====================
+//  Base SCSS
+//====================
+
+* {
+  font-family: $primary-font;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin-left: 35px;
+	margin-right: 35px;
+	@include container-desktop;
+}
+
+.card {
+	margin-bottom: 30px;
+}
+
+.theme__colors {
+  @extend %theme__colors;
+}

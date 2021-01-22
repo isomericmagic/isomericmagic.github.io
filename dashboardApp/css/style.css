@@ -1,0 +1,539 @@
+/* ===================================== 
+   Page Styles
+======================================== */
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  background-color: #7F7FBB;
+}
+
+#header-title {
+  margin-right: auto;
+  margin-left: 20px;
+  color: white;
+  font-weight: 100;
+}
+
+#dash {
+  font-weight: bold;
+}
+
+.header-item {
+  height: 40px;
+  margin-top: 18px;
+}
+
+#bell {
+  border-right: 1px solid #5b2296;
+  margin-right: 15px;
+}
+
+#bell-pic {
+  height: 80%;
+  padding-top: 10px;
+  float: left;
+  color: green;
+  transition: height .5s;
+}
+
+#bell-pic:hover {
+  height: 90%;
+}
+
+#green-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: lightgreen;
+  margin-left: 17px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+#profile-avatar-pic {
+  height: 100%;
+  width: 40px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+#profile-name {
+  margin-top: 25px;
+  margin-right: 15px;
+  color: white;
+  font-weight: 100;
+}
+
+nav {
+  display: flex;
+  background-color: #4C4C70;
+}
+
+.nav-item {
+  height: 60px;
+  width: 90px;
+  margin-top: 22px;
+}
+
+.nav-item-pic {
+  height: 60%;
+  display: block;
+  margin: auto;
+}
+
+#dashboard-text {
+  color: #5F5F62;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#container-1 {
+  height: 500px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+#dashboard-bar {
+  height: 60px;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+}
+
+#dashboard-tab {
+  height: 60px;
+  margin-left: 15px;
+  border-right: 1px solid #bfbfbf;
+}
+
+#search-container {
+  height: 60px;
+  display: flex;
+  flex-direction: row-reverse;
+  border-bottom: 1px solid #bfbfbf;
+  background-color: #efefef;
+}
+
+#search-field {
+  height: 75%;
+  width: 180px;
+  margin-right: 50px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.fa-search { 
+  position: absolute;
+  top: 97px;
+  visibility: hidden;
+  color: #7F7FBB;
+}
+
+#line-chart-container {
+  height: 330px !important;
+  width: 96%;
+}
+
+#bar-chart-container {
+  height: 280px !important;
+  max-width: 96%;
+}
+
+#doughnut-chart-container {
+  height: 280px !important;
+  max-width: 96%;
+}
+
+.chart-title {
+  margin-left: 20px;
+  font-weight: 100;
+}
+
+#container-2 {
+  min-height: 350px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+#container-3 {
+  min-height: 230px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.social-icon-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #7b72b6;
+  margin-top: 14px;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.social-box {
+  width: 250px;
+  height: 100px;
+  border: 1px solid lightgray;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.social-info {
+  display: inline;
+  float: right;
+  margin-right: 50px;
+}
+
+.social-count {
+  font-size: 36px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.social-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-block-start: 1em;
+  margin-block-end: 0em;
+}
+
+
+#container-4 {
+  min-height: 350px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+#search-user-field {
+  display: block;
+  margin-left: 20px;
+  height: 40px;
+  width: 90%; 
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#message-user-field {
+  display: block;
+  margin-left: 20px;
+  height: 125px;
+  width: 90%; 
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#send-button {
+  display: block;
+  margin-left: 20px;
+  height: 50px;
+  width: 90%; 
+  border-radius: 5px;
+  background-color: #7F7FBB;
+  color: white;
+}
+
+#container-5 {
+  min-height: 355px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #7F7FBB;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(56px);
+  -ms-transform: translateX(56px);
+  transform: translateX(56px);
+}
+
+#timezone-list {
+  width: 90%;
+  height: 40px;
+  margin-left: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.settings-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.slider-label {
+  margin-block-start: .5em;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+#email-notifications-text {
+  margin-right: 64px;
+}
+
+
+#recent-activity-title,
+#new-members-title,
+#message-user-title,
+#settings-title {
+  margin-left: 20px;
+  font-weight: 100;
+}
+
+.recent-activity-container,
+.new-members-container {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.recent-activity-container:nth-child(5) {
+  border-bottom: none;
+}
+
+.new-members-container:nth-child(5) {
+  border-bottom: none;
+}
+
+.member-pic {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.recent-activity-paragraph,
+.new-members-paragraph {
+  margin-block-start: 0em;
+  margin-block-end: 0em; 
+}
+
+.recent-activity-clicker {
+  margin-left: auto;
+  font-size: 32px;
+  font-weight: bold;
+  color: purple;
+}
+
+.new-members-date {
+  margin-left: auto;
+}
+
+.recent-activity-text-container,
+.new-members-text-container {
+  padding-bottom: 15px;
+}
+
+#save-button,
+#cancel-button {
+  display: inline-block;
+  margin-left: 20px;
+  height: 50px;
+  width: 42%; 
+  border-radius: 5px;
+  color: white;
+}
+
+#save-button {
+  background-color: #7F7FBB;
+}
+
+#container-6 {
+  min-height: 35px;
+}
+
+.two-col-items {
+  flex-grow: 1;
+  min-height: 350px;
+  flex-basis: 300px;
+}
+
+#container-3-title {
+  height: 60px;
+}
+
+.three-col-items {
+  flex-grow: 1;
+  height: 170px;
+  flex-basis: 170px;
+}
+
+  #daily-traffic, 
+  #message-user, 
+  #new-members {
+  border-bottom: 1px solid #bfbfbf;
+  }
+
+
+
+/* ===================================== 
+   Grid Layout
+======================================== */
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 75px 75px 1fr; 
+  grid-template-areas: 
+  "header"
+  "nav"
+  "main";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+nav {
+  grid-area: nav;
+}
+
+/* ===================================== 
+   Alert CSS
+======================================== */
+#alert {
+    padding: 10px 10px 10px 10px;
+    background-color: purple;
+    color: white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+#closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#closebtn:hover {
+    color: black;
+}
+
+
+/* ===================================== 
+   Media Queries
+======================================== */
+
+@media (min-width: 425px) {
+  body {
+    grid-template-columns: 90px 1fr;
+    grid-template-rows: 75px 1fr; 
+    grid-template-areas: 
+    "header header"
+    "nav main";
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 617px) {
+  #daily-traffic,
+  #message-user {
+  border-right: 1px solid #bfbfbf;
+  border-bottom: none;
+  }
+}
+
+@media (min-width: 617px) {
+  #daily-traffic,
+  #message-user {
+  border-right: 1px solid #bfbfbf;
+  border-bottom: none;
+  }
+}
+
+@media (min-width: 696px) {
+  #new-members {
+  border-right: 1px solid #bfbfbf;
+  border-bottom: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .fa-search { 
+    left: 90.5%;
+    visibility: visible;
+  }
+  #search-field {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+    .fa-search { 
+    left: 92.5%;
+  }
+  #search-field {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1400px) {
+    .fa-search { 
+    left: 94.5%;
+  }
+}
+

@@ -1,0 +1,29 @@
+//====================
+//  Navigation SCSS
+//====================
+
+.nav{
+  padding-left: 0px;
+  margin-bottom: 25px;
+  @include nav-desktop;
+  &__item {
+  list-style-type: none;
+  text-align: center;
+  }	
+}
+
+.nav a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	height: 35px;
+	padding-top: 15px;
+	border-radius: 8px;
+	font-size: 17.5px;
+	@include desktop-nav-item;
+}
+
+.nav a:hover {
+	background-color: $nav-headline-color;
+	color: white;
+}

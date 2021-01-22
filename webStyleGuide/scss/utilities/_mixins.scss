@@ -1,0 +1,74 @@
+//====================
+//  Mixins SCSS
+//====================
+
+@mixin container-desktop {  
+  @media (min-width: $desktop-breakpoint) {
+    margin-left: 175px;
+    margin-right: 175px; 
+  }
+}
+
+@mixin grid__row-desktop {  
+  @media (min-width: $desktop-breakpoint) {
+	  display: flex;
+  }
+}
+
+@mixin nav-desktop {  
+  @media (min-width: $desktop-breakpoint) {
+	  display: flex;
+	  justify-content: space-between;
+	  margin-right: 100px;
+	  margin-left: 200px;
+	  margin-top: 30px;
+	  flex-wrap: wrap; 
+  }
+}
+
+@mixin set-width($w) {  
+  @media (min-width: $desktop-breakpoint) {
+	  width: $w; 
+  }
+}
+
+@mixin desktop-nav-item {  
+  @media (min-width: $desktop-breakpoint) {
+	  //min-width: 50px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  height: 30px;
+	  padding-top: 10px; 
+  }
+}
+
+@mixin blockquote-desktop {  
+  @media (min-width: $desktop-breakpoint) {
+    margin-right: 20px; 
+    margin-left: 0px;
+    padding-left: 30px;
+  }
+}
+
+@mixin desktop-all-buttons {  
+  @media (min-width: $desktop-breakpoint) {
+    @include set_width(100%);
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@mixin desktop-button {  
+  @media (min-width: $desktop-breakpoint) {
+	  margin-top: 40px;
+	  padding-left: 50px;
+	  padding-right: 50px;
+  }
+}
+
+@mixin center-grid-buttons {
+	@media (min-width: $desktop-breakpoint) {
+    text-align: center;
+    padding-left: 0px;
+  }
+}

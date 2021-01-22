@@ -1,0 +1,210 @@
+//====================
+//  Grid SCSS
+//====================
+
+.grid__row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  &__col--12 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+}	
+
+.grid__row:nth-of-type(6) > .theme__colors {
+    background-color: #4cecd1;
+    padding-left: 10px;
+}
+
+.grid__row:nth-of-type(7) > .theme__colors {
+    background-color: #2c9bb8;
+    padding-left: 10px;
+}
+
+.grid__row:nth-of-type(8) > .theme__colors {
+    background-color: #6dd9fa;
+    padding-left: 10px;
+}
+
+.grid__row:nth-of-type(9) > .theme__colors {
+    background-color: #cca4d6;
+    padding-left: 10px;
+}
+
+.grid__row:nth-of-type(10) > .theme__colors:nth-of-type(1) {
+    background-color: #96dfa7;
+    padding-left: 10px;
+}
+
+.grid__row:nth-of-type(10) > .theme__colors:nth-of-type(2) {
+    background-color: #e1a6ab;
+    padding-left: 10px;
+}
+
+.grid__row:nth-of-type(11) > .theme__colors:nth-of-type(1) {
+    background-color: #fcae8f;
+    padding-left: 10px;
+}
+
+.grid__row:nth-of-type(11) > .theme__colors:nth-of-type(2) {
+    background-color: #6dd9fa;
+    padding-left: 10px;
+}
+
+.grid__row:nth-of-type(12) > .theme__colors {
+    background-color: #e1a6ab;
+    padding-left: 10px;
+}
+
+.grid__row:nth-of-type(1) {
+  @include grid__row-desktop;
+}
+
+.grid__row:nth-of-type(1) > .grid__col--3 {
+  @include set_width(25%);
+}
+
+.grid__row:nth-of-type(1) > .grid__col--9 {
+  @include set_width(75%);
+}
+
+.grid__row:nth-of-type(3) {
+  @include grid__row-desktop;
+}
+
+.grid__row:nth-of-type(3) > .grid__col--8 {
+  @include set_width(62%);
+}
+
+.grid__row:nth-of-type(3) > .grid__col--4 {
+  @include set_width(33%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid__row:nth-of-type(4) {
+  @include grid__row-desktop;
+}
+
+.grid__row:nth-of-type(4) > .grid__col--6:nth-of-type(1) {
+  @include set_width(40%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid__row:nth-of-type(4) > .grid__col--6:nth-of-type(2) {
+  @include set_width(33%);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px
+}
+
+.grid__row:nth-of-type(5) > .grid__col--12 {
+  @include desktop-all-buttons;
+}
+
+.grid__row:nth-of-type(5) > .grid__col--12 > .theme__colors {
+  @include desktop-button;
+}
+
+.grid__row:nth-of-type(6) {
+  @include grid__row-desktop;
+}
+
+.grid__row:nth-of-type(6) > .theme__colors  {
+  @include set_width(100%);
+  @include center-grid-buttons;
+  height: 33px;
+  padding-top: 12px;
+}
+
+.grid__row:nth-of-type(7) {
+  @include grid__row-desktop;
+  justify-content: space-between;
+}
+
+.grid__row:nth-of-type(7) > .theme__colors  {
+  @include set_width(49%);
+  @include center-grid-buttons;
+  height: 33px;
+  padding-top: 12px;
+}
+
+.grid__row:nth-of-type(8) {
+  @include grid__row-desktop;
+  justify-content: space-between;
+}
+
+.grid__row:nth-of-type(8) > .theme__colors  {
+  @include set_width(32.66%);
+  @include center-grid-buttons;
+  height: 33px;
+  padding-top: 12px;
+}
+
+.grid__row:nth-of-type(9) {
+  @include grid__row-desktop;
+  justify-content: space-between;
+}
+
+.grid__row:nth-of-type(9) > .theme__colors  {
+  @include set_width(24.5%);
+  @include center-grid-buttons;
+  height: 33px;
+  padding-top: 12px;
+}
+
+.grid__row:nth-of-type(10) {
+  @include grid__row-desktop;
+  justify-content: space-between;
+}
+
+.grid__row:nth-of-type(10) > .grid__col--5  {
+  @include set_width(40%);
+  @include center-grid-buttons;
+  height: 33px;
+  padding-top: 12px;
+}
+
+.grid__row:nth-of-type(10) > .grid__col--7  {
+  @include set_width(59%);
+  @include center-grid-buttons;
+  height: 33px;
+  padding-top: 12px;
+}
+
+.grid__row:nth-of-type(11) {
+  @include grid__row-desktop;
+  justify-content: space-between;
+}
+
+.grid__row:nth-of-type(11) > .grid__col--8  {
+  @include set_width(66.33%);
+  @include center-grid-buttons;
+  height: 33px;
+  padding-top: 12px;
+}
+
+.grid__row:nth-of-type(11) > .grid__col--4  {
+  @include set_width(32.66%);
+  @include center-grid-buttons;
+  height: 33px;
+  padding-top: 12px;
+}
+
+.grid__row:nth-of-type(12) {
+  @include grid__row-desktop;
+}
+
+.grid__row:nth-of-type(12) > .theme__colors  {
+  @include set_width(59%);
+  @include center-grid-buttons;
+  margin: auto;
+  height: 33px;
+  padding-top: 12px;
+}

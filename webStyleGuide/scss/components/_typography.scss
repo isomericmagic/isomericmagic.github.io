@@ -1,0 +1,41 @@
+//====================
+//  Typography SCSS
+//====================
+
+p {
+  //padding: 0px 10px;
+  padding-left: 10px;
+  font-size: 16.5px;
+  line-height: 25px;
+}
+
+.headline {
+  &--secondary {
+  font-size: 16.5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
+  &--primary {
+  padding-left: 25px;
+  color: $nav-headline-color;
+  margin-bottom: 30px;
+  }
+}	
+
+.card > p a {
+  text-decoration: none;
+  color: $default-color;
+  font-weight: bold;
+}
+
+.blockquote {
+	font-size: 26px;
+	font-style: italic;
+	border-left: 10px solid $nav-headline-color;
+	border-radius: 8px;
+	padding-left: 10px;
+	margin-right: 30px;
+	margin-left: 20px;
+	margin-bottom: 40px;
+  @include blockquote-desktop;
+}

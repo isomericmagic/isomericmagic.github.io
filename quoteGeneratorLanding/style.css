@@ -1,0 +1,16 @@
+body {
+  background: #696969; /*Dim gray*/ 
+}
+
+#projectDescription {
+	background-color: #dcdcdc; /*Gainsboro*/
+	color: #191970; /*Midnight Blue*/
+	width: 54%;
+	padding: 20px;
+    margin: auto;
+}
+
+#button1 {
+	margin-left: 22%;
+	margin-right: 10px;
+}

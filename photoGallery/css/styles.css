@@ -1,0 +1,48 @@
+.image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-item {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin: auto;
+}
+
+#search-field {
+	display: block;
+	margin-top: 35px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	max-width: 480px;
+	width: 100%;
+	border: 2px solid lightgrey;
+	border-radius: 5px;
+	font-family: "Roboto",serif;
+	font-size: 15px;
+}
+
+@media (min-width: 468px) {
+  .image-item {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 868px) {
+  .image-item {
+    flex: 25%;
+    max-width: 25%;
+  }
+}

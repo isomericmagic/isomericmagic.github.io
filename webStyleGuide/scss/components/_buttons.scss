@@ -1,0 +1,45 @@
+//====================
+//  Buttons SCSS
+//====================
+
+.btn{
+  &--default {
+    @extend %btn;
+    color: white;
+    background-color: $default-color;
+    display: block;
+    margin-top: 40px;
+  }
+  &--default[type="submit"] {
+    margin-top: 20px;
+  }
+  &--success {
+    @extend %btn;
+    color: white;
+    background-color: $success-color;
+    display: block;
+  }
+  &--error {
+    @extend %btn;
+    color: white;
+    //margin-top: 25px;
+    background-color: $error-color;
+    display: block;
+  }
+  &--warning {
+    @extend %btn;
+    color: white;
+    //margin-top: 25px;
+    background-color: $warning-color;
+    display: block;
+  }
+  &--info {
+    @extend %btn;
+    color: white;
+    //margin-top: 25px;
+    background-color: $info-color;
+    margin-bottom: 55px;
+    display: block;			
+  }
+}
+

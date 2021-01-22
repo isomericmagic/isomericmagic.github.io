@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<title>Random Quote Generator Project Landing Page</title>
+	</head>
+	<body>
+	  <div id="projectDescription">
+	    <h1>Random Quote Generator</h1>
+		<h3>Project Information</h3>
+        <p>In this project, you'll create an app that displays random famous quotes each time a button is clicked. 
+		You can display a quote from a famous athlete, politician, or historical figure. You'll need to use your knowledge 
+		of basic JavaScript syntax, including variables, loops and object literals, to complete this project.</p>
+        <p>To help you get started, we'll give you basic HTML and CSS, as well a JavaScript file containing some starter 
+		code. But you'll have to find the quotes yourself and build the data structure to store them in.</p>
+		<p>This project is a fun and effective way for you to practice fundamental JavaScript skills. It also gives you 
+		a simple interactive portfolio piece to show off your understanding of JavaScript.</p>
+		<h3>Project Instructions</h3>
+        <ol>
+		  <li>Create an array of JavaScript objects to hold the data for your quotes. Name the array quotes. The quotes 
+		  array should be accessible in the global scope.</li>
+		  <li>Each quote object in the quotes array should have the following properties:
+		    <ul>
+		      <li>A quote property which contains a string: the text of the quote that will be displayed on the page.</li>
+			  <li>A source property which contains a string identifying the creator of the quote. For example: &#34;Mark Twain&#34; 
+			  or &#34;Traditional Irish proverb.&#34;</li>
+			  <li>An optional citation property which contains a string identifying where the quote comes from, like a speech 
+			  or publication. For example, &#34;Famous Anonymous Jokes.&#34; If there is no known publication, do not include this 
+			  property on the object.</li>
+			  <li>An optional year property which contains a number identifying the date of the quote. For example, 1997. 
+			  If there is no known date, then do not include this property on the object.</li>
+		    </ul>
+		  </li>
+		  <li>Create a function named getRandomQuote which:
+		    <ul>
+		      <li>selects a random quote object from the quotes array</li>
+			  <li>returns the randomly selected quote object</li>
+		    </ul>
+		  </li>
+		  <li>Create a function named printQuote which follows these rules:
+		    <ul>
+		      <li>printQuote calls the getRandomQuote function and stores the returned quote object in a variable</li>
+			  <li>printQuote constructs a string containing the different properties of the quote object</li>
+			  <li>printQuote doesn't add a citation for a missing citation or a year if the year property is missing</li>
+			  <li>printQuote displays the final HTML string to the page. You can use this JS snippet to accomplish that: 
+			  <br>
+			  document.getElementById(&#39;quote-box&#39;).innerHTML</li>
+		    </ul>
+		  </li>
+		</ol>
+      </div>
+	  <br>
+	  <button id="button1">View Project</button><button id="button2">Home</button>
+	<script src="app.js"></script>	  
+	</body>
+</html>

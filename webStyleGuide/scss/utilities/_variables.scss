@@ -1,0 +1,27 @@
+//====================
+//  Variables SCSS
+//====================
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$primary-font: 'Roboto';
+$backup-font: serif;
+
+//Breakpoints
+$desktop-breakpoint: 1400px;
+
+//Colors
+$nav-headline-color: #00FFD4;
+$default-color: #38eeff;
+$success-color: #72d080;
+$error-color: #ff7f7f;
+$warning-color: #f66334;
+$info-color: #8964ae;
+$grid-col-12-color: #4cecd1;
+$grid-col-6-color: #2c9bb8;
+$grid-col-4-color: #6dd9fa;
+$grid-col-3-color: #cca4d6;
+$grid-col-5-color: #96dfa7;
+$grid-col-7-color: #e1a6ab;
+$grid-col-8-color: #fcae8f;

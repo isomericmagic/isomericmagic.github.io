@@ -1,0 +1,135 @@
+#primary-container {
+	width: 1200px;
+	margin: auto;
+}
+
+h3 {
+	margin-left: 2.25%;
+	margin-bottom: 25px;
+	font-family: Alef, Serif;
+}
+
+.box {
+	display: inline-block;
+	margin-left: 2.5%;
+	margin-bottom: 2.5%;
+	height: 150px;
+	width: 30%;
+	border: 1px solid black;
+	border-radius: 6px;
+}
+
+.photo {
+	display: inline-block;
+	margin-left: 25px;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	background-color: grey;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.student-info {
+	display: inline-block;
+	float: right;
+    margin-right: 10px;
+    margin-top: 25px;
+	height: 100px;
+	width: 200px;
+}
+
+.name {
+	margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 5px;
+}
+
+.email {
+    font-size: 12px;
+    line-height: 10px;
+}
+
+.city {
+    font-size: 13px;
+    line-height: 10px;
+}
+
+p {
+	font-family: Arial, Serif;
+}
+
+p.name {
+	color: #3C4451;
+}
+
+p.email {
+	color: #B3B6BC;
+}
+
+p.city {
+	color: #B3B6BC;
+}
+
+.pop-up-box {
+	height: 450px;
+	width: 350px;
+	border-radius: 6px;
+}
+
+.pop-up-photo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	height: 125px;
+	width: 125px;
+	border-radius: 500%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.pop-up-student-info {
+	margin: auto;
+	display: block;
+	height: 100px;
+	width: 300px;
+}
+
+p.pop-up-name {
+	color: #3C4451;
+	text-align: center;
+	font-size: 16px;
+    font-weight: bold;
+    line-height: 5px;
+}
+
+p.pop-up-email {
+	color: #B3B6BC;
+	text-align: center;
+    font-size: 12px;
+    line-height: 10px;
+}
+
+p.pop-up-city {
+	color: #B3B6BC;
+	text-align: center;
+    font-size: 12px;
+    line-height: 10px;
+}
+
+p.pop-up-line {
+	color: #B3B6BC;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+p.pop-up-details {
+	color: #B3B6BC;
+	text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}

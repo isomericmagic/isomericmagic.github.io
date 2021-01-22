@@ -1,0 +1,29 @@
+//====================
+//  Forms SCSS
+//====================
+
+.form {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+}
+
+.form__label {
+	&--hidden {
+    visibility: hidden;
+	}
+}
+
+.form__input {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.form__input[placeholder="Username"],
+.form__input[placeholder="Password"] {
+  padding-left: 16px;
+  font-weight: bold;
+  border-bottom: 7px solid $nav-headline-color;
+  padding-bottom: 12px;
+  margin-bottom: 0px;
+}
