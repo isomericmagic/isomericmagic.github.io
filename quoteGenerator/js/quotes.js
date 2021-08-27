@@ -61,11 +61,6 @@ var quotes = [
 	  source: "Marcus Aurelius"
 	},
 	{
-	  quote: "Regeneration is for nothing else than that the natural [ego] may be subjugated, and the spiritual [Self] obtain dominion; and the natural is subjugated when it is brought into correspondence.",
-	  source: "Swedenborg",
-	  citation: "Arcana Coelestia"
-	},
-	{
 	  quote: "By this method the discerning Kabbalist can decide that it is not wise to move against the tide, but wait for the flow to turn and place an impulse in the ebb that will bear fruit when the active phase begins again.",
 	  source: "Z.B.S. Halevi",
 	  citation: "The Work of the Kabbalist"
@@ -78,15 +73,5 @@ var quotes = [
 	  quote: "Even though we are not responsible for the way we are and feel, we have to take responsibility for the way we act. Therefore we have to learn to discipline ourselves. And discipline rests on the ability to act in a manner that is contrary to our feelings when necessary.",
 	  source: "E.C. Whitmont",
 	  citation: "The Symbolic Quest"
-	},
-	{
-	  quote: "Filling the conscious mind with ideal conceptions is a characteristic of Western theosophy, but not the confrontation with the shadow and the world of darkness. One does not become enlightened by imagining figures of light, but by making the darkness conscious.",
-	  source: "Jung",
-	  citation: "Alchemical Studies"
-	},
-	{
-	  quote: "An inflated consciousness is always egocentric and conscious of nothing but its own existence. It is incapable of learning from the past, incapable of understanding contemporary events, and incapable of drawing right conclusions about the future. It is hypnotized by itself and therefore cannot be argued with. It inevitably dooms itself to calamities that must strike it dead.",
-	  source: "Jung",
-	  citation: "Psychology and Alchemy"
-	}	
+	}
 ]
