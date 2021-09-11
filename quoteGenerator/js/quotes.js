@@ -70,6 +70,10 @@ var quotes = [
 	  source: "Mark 3:25"
 	},
 	{
+	  quote: "It ain't how hard you hit...it's how hard you can get hit and keep moving forward.",
+	  source: "Rocky Balboa"
+	},
+	{
 	  quote: "Even though we are not responsible for the way we are and feel, we have to take responsibility for the way we act. Therefore we have to learn to discipline ourselves. And discipline rests on the ability to act in a manner that is contrary to our feelings when necessary.",
 	  source: "E.C. Whitmont",
 	  citation: "The Symbolic Quest"
