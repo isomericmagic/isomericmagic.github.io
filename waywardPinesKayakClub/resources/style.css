@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+html, body {
+  margin:0;
+  height:100%;
+  min-height:100%;
+}
+
+body {
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Amatic SC', Helvetica, sans-serif;
+}
+
+header {
+  border-bottom: 1px solid black;
+  max-height: 100px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 10%;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content {
+  flex: auto;
+  overflow-y: auto;
+}
+
+#logo {
+  height: 100px;
+  width: 600px;
+  margin-right: auto;
+  margin-left:  10px;
+  background-image: url('kayak-club-full-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#nav-bar {
+  list-style: none;
+  display: inline-flex;*/
+}
+
+.topnav {
+  display: none;
+}
+
+#nav-bar > li > a {
+  margin-right: 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#mission-statement {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#section-one {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+
+.section-one-item {
+  margin: 0 10px;
+}
+
+.section-one-item > figure > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+blockquote {
+  font-size: 1.5rem;
+  text-align: center;
+} 
+
+blockquote > span {
+  font-size: 3rem;
+}
+
+#section-two {
+  width: 100%;
+}
+
+#section-two > figure > img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#mission-statement,
+#section-one,
+#member-statement,
+#join-us {
+  margin-top: 50px;
+}
+
+.button {
+  width: 60px;
+  height: 30px;
+  display: block;
+  margin: auto;
+  background-color: rgb(0, 42, 58);
+  color: white;
+  border: 1px solid black;
+  padding-top: 15px;
+  padding-right: 32px;
+  padding-bottom: 0;
+  padding-left: 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+footer {
+  height: 40px;
+  margin-top: 50px;
+  margin-left: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1199px) {
+  #logo {
+    background-image: url('kayak-club-small-logo.png');
+    width: 100px;
+  }
+  #section-one {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  #section-one {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  #nav-bar > li > a {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
